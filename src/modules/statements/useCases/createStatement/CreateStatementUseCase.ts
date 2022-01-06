@@ -6,7 +6,7 @@ import { CreateStatementError } from "./CreateStatementError";
 import { ICreateStatementDTO } from "./ICreateStatementDTO";
 
 @injectable()
-export class CreateStatementUseCase {
+class CreateStatementUseCase {
   constructor(
     @inject('UsersRepository')
     private usersRepository: IUsersRepository,
@@ -40,3 +40,5 @@ export class CreateStatementUseCase {
     return statementOperation;
   }
 }
+
+export { CreateStatementUseCase }
