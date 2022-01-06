@@ -8,12 +8,6 @@ let usersRepositoryInMemory: InMemoryUsersRepository
 
 let getBalanceUseCase: GetBalanceUseCase;
 
-
-enum OperationType {
-    DEPOSIT = 'deposit',
-    WITHDRAW = 'withdraw',
-}
-
 describe("GetBalanceUseCase", () => {
     beforeEach(() => {
         usersRepositoryInMemory = new InMemoryUsersRepository();
